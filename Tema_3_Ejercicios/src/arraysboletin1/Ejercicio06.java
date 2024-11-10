@@ -1,9 +1,10 @@
-package arrays;
+package arraysboletin1;
 
+import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Ejercicio05 {
+public class Ejercicio06 {
 
 	public static void main(String[] args) {
 
@@ -11,16 +12,7 @@ public class Ejercicio05 {
 		int numeros = 0;
 
 		// Variable para recoger la tabla.
-		int tabla[] = new int[10];
-
-		// Variable para recoger la suma.
-		int suma = 0;
-
-		// Variable para recoger el maximo.
-		int maximo = Integer.MIN_VALUE;
-
-		// Variable para recoger el minimo.
-		int minimo = Integer.MAX_VALUE;
+		int tabla[] = new int[8];
 
 		// Creamos una variable para cubrir las excepciones.
 		boolean error = false;
@@ -65,38 +57,23 @@ public class Ejercicio05 {
 			// Aplicamos los valores a la tabla.
 			tabla[i] = numeros;
 
-			// Vamos sumando los numeros.
-			suma += numeros;
+		}
 
-			if (numeros > maximo) {
+		// Bucle para recoger la tabla
+		for (int valores : tabla) {
 
-				maximo = numeros;
+			// Condiciones para saber si un numero es par o impar.
+			if (valores % 2 == 0) {
 
-			}
+				System.out.println(valores + " --> par");
 
-			if (numeros < minimo) {
+			} else {
 
-				minimo = numeros;
+				System.out.println(valores + " --> impar");
 
 			}
 
 		}
-
-		// Bucle para recorrer la tabla desde el final al principio.
-		for (int i = 0; i < tabla.length; i++) {
-
-			// Ofrecemos la tabla al usuario.
-			System.out.print(tabla[i] + " ");
-
-		}
-
-		// Espacio en blanco.
-		System.out.println();
-
-		// Ofrecemos elresultado de la suma.
-		System.out.println("La suma de sus valores resulta: " + suma);
-		System.out.println("El valor maximo es: " + maximo);
-		System.out.println("El valor minimo es: " + minimo);
 
 		// Cerramos el Scanner.
 		sc.close();
