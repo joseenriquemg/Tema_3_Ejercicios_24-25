@@ -35,7 +35,7 @@ public class Ejercicio03 {
 		Arrays.sort(tabla);
 
 		// Ofrecemos la tabla ordenada.
-		System.out.println("Tabla ordenada>:");
+		System.out.println("Tabla ordenada:");
 		System.out.println(Arrays.toString(tabla));
 
 	}
