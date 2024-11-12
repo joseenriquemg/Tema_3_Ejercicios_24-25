@@ -72,10 +72,10 @@ public class Ejercicio04 {
 		Arrays.sort(tabla);
 
 		// Bucle para ordenarlo de manera descendente.
-		for (int i = tabla.length; i > 0; i--) {
+		for (int i = tabla.length - 1; i >= 0; i--) {
 
 			// Ofrecemos la tabla al usuario.
-			tablaDescendente[puntuaciones] = puntuaciones;
+			tablaDescendente[i] = tabla[(tabla.length - 1) - i];
 
 		}
 
