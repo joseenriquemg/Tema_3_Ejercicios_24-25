@@ -26,14 +26,10 @@ public class Ejercicio01 {
 				// Aplicamos los valores a la tabla.
 				tabla[filas][columnas] = valores;
 
-				System.out.print(tabla[filas][columnas] + " ");
-
 			}
 
-			System.out.println();
-
 		}
-		
+
 		System.out.println(Arrays.toString(picos(tabla)));
 
 	}
@@ -65,6 +61,9 @@ public class Ejercicio01 {
 			}
 
 		}
+
+		tablaMinMax[0] = min;
+		tablaMinMax[1] = max;
 
 		return tablaMinMax;
 	}
